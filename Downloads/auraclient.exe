@@ -1,0 +1,15 @@
+const { app, BrowserWindow } = require("electron");
+
+app.whenReady().then(() => {
+    const win = new BrowserWindow({
+        width: 1366,
+        height: 850,
+        title: "Aura Client",
+        autoHideMenuBar: true,
+        backgroundColor: "#111111"
+    });
+
+    win.loadURL(
+        "https://clarasalada2025-beep.github.io/Aura-client/"
+    );
+});
